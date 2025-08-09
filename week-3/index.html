@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mi primera pagina</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+  <body>
+    <h1>Hola Mundo</h1>
+
+    <button id="btn-1">Click me</button>
+
+    <img
+      src="https://upload.wikimedia.org/wikipedia/commons/1/15/Escudo_de_la_universidad_Mariano_G%C3%A1lvez_Guatemala.svg"
+      alt="Aqui habia puesto una imagen de la universidad"
+      width="200px"
+    />
+
+    <script>
+      // Funcion que se ejecuta cuando se carga el documento
+      // Seleccionar el boton a traves de su id
+      const button1 = document.getElementById("btn-1");
+
+      console.log("button", button1);
+
+      // Agregar un listener al boton para que cuando se presione,
+      // se ejecute la funcion que se encuentra dentro de la constante button1
+      button1.addEventListener("click", () => {
+        alert("Presionaste el boton");
+      });
+    </script>
+  </body>
+</html>
