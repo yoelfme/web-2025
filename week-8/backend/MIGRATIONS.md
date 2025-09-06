@@ -23,5 +23,5 @@ npm run typeorm migration:create src/migrations/CreateContactsTable
 ## Run migrations
 
 ```bash
-npm run typeorm migration:run
+npm run typeorm migration:run -- -d src/config/typeorm.config.ts
 ```
